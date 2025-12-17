@@ -1,0 +1,68 @@
+#titulo-r {
+    text-align: center;
+}
+#emailinput {
+    margin-top: 2rem;
+    margin-left: 20%;
+    
+}
+
+#InputEmail1 {
+    margin-right:25%;
+
+}
+
+#InputPassword1 {
+    margin-right: 25%;
+}
+
+#passwordiput {
+    margin-top: 2rem;
+    margin-left: 20%;
+}
+
+#exampleCheck1 {
+    margin-left: 20%;
+}
+
+#button-login {
+    margin-left: 20%;
+    margin-bottom: 2rem
+}
+
+#emailHelp {
+    margin-top: 0.5rem;
+    margin-right: 25%;
+
+}
+
+#cont {
+    margin-top: 2rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+#linea-div {
+    margin-top: 4rem;
+}
+
+#button-create-login {
+    margin-left: 20%;
+    margin-bottom: 2rem
+}
+
+
+#nav {
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+#nav-content {
+    margin-bottom: 1rem;
+}
+
+#card-footer {
+    margin-top: 2rem;
+}
+
+

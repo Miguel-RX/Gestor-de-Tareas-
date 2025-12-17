@@ -1,0 +1,39 @@
+#titulo-r {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+#cont {
+    margin-top: 2rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+#InputEmail {
+    margin-top: 2rem;
+    margin-left: 25%;
+    margin-right:25%;
+}
+#InputPassword {
+    margin-top: 1rem;
+    margin-left: 25%;
+    margin-right:25%;
+}
+
+#InputCity {
+    margin-top: 1rem;
+    margin-left: 25%;
+    margin-right:25%;
+}
+#exampleCheck1 {
+    margin-left: 25%;
+}
+#button-login {
+    margin-top: 1rem;
+    margin-left: 25%;
+    margin-bottom: 2rem
+}
+
+#linea-div {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

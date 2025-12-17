@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!--fin de bootstrap y llamado de styles-->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body class="p-3 mb-2 bg-dark text-white">
+
+    <nav id="nav" class="navbar bg-dark border-bottom border-body">
+        <form id="nav-content" class="container-fluid justify-content-end">
+            <button id="btn-Admin" class="btn btn-outline-success me-2" type="submit">Inicio como administrador</button>
+        </form>
+    </nav>
+
+    <h2 id="titulo-r" class="display-2">Inicio de sesión</h2>
+
+<div id="cont"> 
+    <form id="login-form">
+        <fieldset disabled></fieldset>
+        <div id="emailinput" class="mb-3">
+            <div id="InputEmail1">
+                <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Username/Email">
+            </div>
+            <div id="emailHelp" class="h6">Nunca compartiremos su correo electrónico con nadie más.</div>
+        </div>
+
+        <div id="passwordiput" class="mb-3">
+            <div id="InputPassword1">
+                <input type="password" class="form-control" placeholder="Password">
+            </div>
+        </div>
+
+        <div id="exampleCheck1" class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" >
+            <label class="h6" for="exampleCheck1">De acuerdo con T/C</label>
+        </div>
+
+        <button id="button-login" type="submit" class="btn btn-success" >Ingresar</button>
+        </fieldset>
+    </form>
+</div>
+
+    <hr id="linea-div" >
+
+    <h2 id="titulo-r" class="display-2">Crea una cuenta</h2>
+
+<div id="cont">
+    <form id="login-create-form">
+        <fieldset disabled></fieldset>
+        <div id="emailinput" class="mb-3">
+            <div id="InputEmail1">
+                <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Username/Email">
+            </div>
+            <div id="emailHelp" class="h6">Si el usuario es invalido, lea las politicas</div>
+        </div>
+
+        <div id="passwordiput" class="mb-3">
+            <div id="InputPassword1">
+                <input type="password" class="form-control" placeholder="Password">
+                <div id="emailHelp" class="h6">La contraseña debe ser minimo de 5 letras y 2 numeros</div>
+            </div>
+        </div>
+
+        <div id="exampleCheck1" class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" >
+            <label class="h6" for="exampleCheck1">De acuerdo con T/C</label>
+        </div>
+
+        <button id="button-create-login" type="submit" class="btn btn-success" >Crear</button>
+        </fieldset>
+    </form>
+</div>
+
+<div id="card-footer" class="card">
+  <div class="card-header">
+    Pagina dedicada a la gestion de tareas
+  </div>
+  <div class="card-body">
+    <figure>
+      <blockquote class="blockquote">
+        <p>Uso sencillo con funciones basicas.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        proyecto personal <cite title="Source Title">Dev Miguel</cite>
+      </figcaption>
+    </figure>
+  </div>
+</div>
+    <!--llamado de js-->
+    <script src="js/auth.js"></script>
+</body>
+</html>
