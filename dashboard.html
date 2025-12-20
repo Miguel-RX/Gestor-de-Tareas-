@@ -6,17 +6,59 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <!--fin de bootstrap y llamado de styles-->
-    <title>Document</title>
+    <link rel="stylesheet" href="css/styles-dasboard.css">
+    <title>.: Gestor :.</title>
 </head>
-<body>
-<nav class="navbar bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand">Tareas</a>
-    <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
-      <button class="btn btn-outline-success" type="submit">Buscar</button>
-    </form>
+<body class="mb-2 mb-2 bg-light-subtle text-light-emphasis">
+
+    <nav id="nav-bar" class="navbar bg-secondary-subtle text-secondary-emphasis">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">Inicio</a>
+        <form id="search-bar" class="d-flex" role="search">
+          <input id="search-input" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
+          <button id="button-nav" class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </nav>
+
+    <h2 id="title" class="display-4">Ingreso de Tareas</h2>
+
+    <hr>
+
+    <div id="form-data-entry">
+      <form action="NULL">
+        <input id="data-entry" class="form-control me-2" type="search" placeholder="Ingresar tarea" >
+        <button type="button" class="btn btn-primary" id="liveToastBtn">Cargar Tarea</button>
+      </form>
+    </div>
+
+    <hr>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <strong class="me-auto">Datos cargados</strong>
+      <small class="text-success" >Success</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Si no puede visualizar la tarea, refresque la pagina
+    </div>
   </div>
-</nav>
+</div>
+
+  <hr>
+
+<div id="card-advance">
+  <div class="card" style="width: 18rem;">
+    <img src="https://supabase.com/_next/image?url=https%3A%2F%2Ffrontend-assets.supabase.com%2Fwww%2F48b372d29be0%2F_next%2Fstatic%2Fmedia%2Flogo-preview.50e72501.jpg&w=3840&q=75"
+    class="card-img-top" alt="480px">
+    <div class="card-body">
+      <p class="card-text">La seccion back-end y las funciones generales y finales están en desarrollo aún, esperar...</p>
+    </div>
+  </div>
+</div>
+
+    <script src="js/auth-dash.js"></script>
 </body>
 </html>
