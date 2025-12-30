@@ -1,7 +1,33 @@
 import { getUsers } from '../models/userModel.js';
 import { supabase } from "../config/supabase.js";
+import { insertarUsuario } from "../models/userModel.js";
+import { existeUsuario } from "../models/userModel.js";
+import { mostrarAlerta } from "../utils/alerts.js";
 
 
+
+//validar al usuario
+
+export async function validarUsuario(nombre) {
+  if (!nombre) return false;
+
+  const existe = await existeUsuario(nombre);
+
+  if (!existe) {
+    mostrarAlerta("Usuario no existenete", "danger" , "alertLogin");
+    return false;
+  }
+
+  return true; // puede ingresar
+}
+
+
+//crear al usuario 
+
+export async function crearUsuario(nombre) {
+  if (!nombre) return false;
+  return await insertarUsuario(nombre);
+}
 
 export const cargarUsuarios = async () => {
   const usuarios = await getUsers();
@@ -32,3 +58,6 @@ export async function crearTarea(titulo) {
 
   return data;
 }
+
+
+

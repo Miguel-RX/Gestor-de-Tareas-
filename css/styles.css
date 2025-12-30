@@ -3,17 +3,16 @@
 }
 #emailinput {
     margin-top: 2rem;
-    margin-left: 20%;
-    
+    margin-left: 20%;  
 }
-
 #InputEmail1 {
     margin-right:25%;
-
 }
 
-#InputPassword1 {
-    margin-right: 25%;
+#form-data-entry {
+    margin-right: 20%;
+    margin-top: 2rem;
+    margin-left: 20%;
 }
 
 #passwordiput {
@@ -25,15 +24,14 @@
     margin-left: 20%;
 }
 
-#button-login {
-    margin-left: 20%;
+#btnLogin {
+    margin-top: 2rem;
     margin-bottom: 2rem
 }
 
 #emailHelp {
-    margin-top: 0.5rem;
     margin-right: 25%;
-
+    margin-bottom: 2rem;
 }
 
 #cont {
@@ -46,8 +44,8 @@
     margin-top: 4rem;
 }
 
-#button-create-login {
-    margin-left: 20%;
+#btnCrearUsuario {
+    margin-top: 2rem;
     margin-bottom: 2rem
 }
 

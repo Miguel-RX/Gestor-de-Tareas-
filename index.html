@@ -13,73 +13,68 @@
 <body class="p-2 mb-2 bg-dark text-white">
 
     <nav id="nav" class="navbar bg-dark border-bottom border-body">
-        <form id="nav-content" class="container-fluid justify-content-end">
-            <button id="btn-Admin" class="btn btn-outline-success me-2" type="submit">Inicio como administrador</button>
-        </form>
+        <div id="nav-content" class="container-fluid justify-content-end">
+            <a href="index-admin.html" id="btn-Admin" class="btn btn-outline-success me-2" type="submit" >Inicio como administrador</a>
+        </div>
     </nav>
 
     <h2 id="titulo-r" class="display-2">Inicio de sesión</h2>
 
 <div id="cont"> 
-    <form id="login-form">
-        <fieldset disabled></fieldset>
+    <div id="login-form">
+
         <div id="emailinput" class="mb-3">
+
             <div id="InputEmail1">
-                <input type="text" class="form-control" placeholder="Username">
-            </div>
+
+                <input id="inputUsuarioV" class="form-control" placeholder="Nombre de usuario">
+
+                <button id="btnLogin" class="btn btn-primary">
+                Ingresar
+                </button>
+
             <div id="emailHelp" class="h6">Nunca compartiremos su nombre con nadie más.</div>
+
+            <div id="alertLogin">
+
+            </div>
+
+            </div>
+
         </div>
 
-        <div id="exampleCheck1" class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" >
-            <label class="h6" for="exampleCheck1">De acuerdo con T/C</label>
-        </div>
-
-        <button id="button-login" type="submit" class="btn btn-success" >Ingresar</button>
-        </fieldset>
-    </form>
+    </div>
+</div>
 </div>
 
     <hr id="linea-div" >
 
     <h2 id="titulo-r" class="display-2">Crea una cuenta</h2>
 
+
 <div id="cont">
-    <form id="login-create-form">
-        <fieldset disabled></fieldset>
-        <div id="emailinput" class="mb-3">
-            <div id="InputEmail1">
-                <input type="text" class="form-control" placeholder="Username">
-            </div>
-            <div id="emailHelp" class="h6">Si el usuario es invalido, lea las politicas</div>
-        </div>
 
-        <div id="exampleCheck1" class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" >
-            <label class="h6" for="exampleCheck1">De acuerdo con T/C</label>
-        </div>
+    <div id="form-data-entry">
 
-        <button id="button-create-login" type="submit" class="btn btn-success" >Crear</button>
-        </fieldset>
-    </form>
+
+        <input id="inputUsuario" class="form-control" placeholder="Username">
+
+        <button id="btnCrearUsuario" class="btn btn-primary">
+        Crear usuario
+        </button>
+
+        <div id="alertUsuarios"></div>
+
+    </div>
+
 </div>
 
-<div id="card-footer" class="card">
-  <div class="card-header">
-    Pagina dedicada a la gestion de tareas
-  </div>
-  <div class="card-body">
-    <figure>
-      <blockquote class="blockquote">
-        <p>Uso sencillo con funciones basicas.</p>
-      </blockquote>
-      <figcaption class="blockquote-footer">
-        proyecto personal <cite title="Source Title">Dev Miguel</cite>
-      </figcaption>
-    </figure>
-  </div>
-</div>
+
     <!--llamado de js-->
-    <script src="js/auth.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script type="module" src="./js-admin/main.js"></script>
+
+
 </body>
 </html>
